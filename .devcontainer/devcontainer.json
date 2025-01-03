@@ -1,0 +1,20 @@
+{https://console.cloud.google.com/monitoring/metrics-explorer;endTime=2024-12-30T16:49:11.000Z;startTime=2024-12-30T15:49:11.000Z?pageState=%7B%22domainObjectDeprecationId%22:%22AA0D60D6-B79F-4CC8-ABB2-8B6553486961%22,%22xyChart%22:%7B%22constantLines%22:%5B%7B%22label%22:%22%22,%22targetAxis%22:%22Y1%22,%22value%22:9000%7D%5D,%22dataSets%22:%5B%7B%22plotType%22:%22STACKED_AREA%22,%22targetAxis%22:%22Y2%22,%22timeSeriesQuery%22:%22fetch%20consumed_api%5Cn%7C%20metric%20'serviceruntime.googleapis.com%2Fapi%2Frequest_count'%5Cn%7C%20filter%5Cn%20%20%20%20resource.project_id%20%3D%3D%20'grand-lamp-397119'%5Cn%20%20%20%20%26%26%20(resource.service%20%3D%3D%20'people.googleapis.com')%5Cn%7C%20align%20rate(1m)%5Cn%7C%20every%201m%5Cn%7C%20group_by%20%5Bmetric.response_code%5D,%5Cn%20%20%20%20%5Bvalue_request_count_aggregate:%20aggregate(value.request_count)%5D%22,%22unitOverride%22:%22%22%7D%5D,%22options%22:%7B%22mode%22:%22COLOR%22%7D,%22y2Axis%22:%7B%22label%22:%22%22,%22scale%22:%22LINEAR%22%7D%7D%7D&project=grand-lamp-397119
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "hostRequirements": {
+    "cpus": 4
+  },
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "python3 -m pip install -r requirements.txt",
+  "postCreateCommand": "",
+  "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "ms-python.python"
+      ]
+    }
+  }
+}
